@@ -1,0 +1,79 @@
+body::before {
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+}
+@media (max-width: 512px)  and (min-resolution: 1.5dppx),
+       (max-width: 1024px) and (max-resolution: 1.5dppx) {
+  body::before {
+    background-image: url('images/Tunisia_900.jpg');
+  }
+}
+@media (min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
+       (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
+  body::before {
+    background-image: url('images/Tunisia_2046.jpg');
+  }
+}
+@media (min-width: 1025px) and (min-resolution: 1.5dppx),
+       (min-width: 2049px) and (max-resolution: 1.5dppx) {
+  body::before {
+    background-image: url('images/Tunisia_2046.jpg');
+  }
+}
+body .demo-blog {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.demo-blog .demo-blog__posts {
+  max-width: 900px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+  max-width: 800px;
+
+}
+
+.demo-blog.mdl-layout .mdl-layout__content {
+  padding-top: 230px;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+.demo-blog .mdl-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.47);
+  min-height: 200px;
+
+  }
+.mdl-button.mdl-button--twitter{color:#3f51b5}
+.mdl-button.mdl-button--twitter:focus:not(:active){background-color:#00acee}
+.mdl-button--raised.mdl-button--twitter{background:#00acee;color:#fff}
+.mdl-button--raised.mdl-button--twitter:hover{background-color:#00acee}
+.mdl-button--raised.mdl-button--twitter:active{background-color:#00acee}
+.mdl-button--raised.mdl-button--twitter:focus:not(:active){background-color:#00acee}
+.mdl-button--raised.mdl-button--twitter .mdl-ripple{background:#fff}
+.mdl-mini-footer{
+    color: rgb(0,0,0);
+    background-color: rgba(66, 66, 66, 0);
+    text-align: center;
+    width: 450px;
+    display: block;
+    margin: 15px auto 30px auto
+  }
+a {
+    color: rgb(0,0,0);
+    font-weight: 500;
+}
+
